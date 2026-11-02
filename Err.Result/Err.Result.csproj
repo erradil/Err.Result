@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- netstandard2.0 for maximum compatibility, net8.0 for modern runtimes -->
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet package metadata -->
+    <PackageId>Err.Result</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>erradil</Authors>
+    <Description>
+      A lightweight, dependency-free Result pattern library for .NET.
+      Express success/failure without exceptions, compose operations fluently
+      with Map/Bind/Ensure/Tap, and match on outcomes. Includes async overloads.
+    </Description>
+    <PackageTags>result;result-pattern;error-handling;functional;railway-oriented;monad</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/erradil/Err.Result</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
